@@ -1,7 +1,0 @@
-The following directories and their contents are Copyright Miles Shang.
-
-* _posts/
-* _pages/
-* _attachments/
-
-Everything else is Copyright Tom Preston-Werner. Everything is MIT licensed.
