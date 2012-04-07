@@ -1,6 +1,6 @@
 --- 
 status: publish
-title: A few links
+title: A Few Links
 meta: 
   _edit_last: "1"
 layout: post
