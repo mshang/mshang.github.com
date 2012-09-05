@@ -90,6 +90,7 @@ ul.posts {
   width: 40em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
+  padding-bottom: 2em;
 }
 
 .title {
