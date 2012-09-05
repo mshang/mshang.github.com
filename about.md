@@ -9,8 +9,11 @@ tags: []
 published: true
 type: page
 ---
-<img class="alignnone size-medium wp-image-113" title="Mt. Fuji" src="images/me.jpg" alt="" width="225" height="300" />
+<img class="alignnone" src="images/me.png" />
 
-I'm an currently an undergrad studying Mathematics and Linguistics at McGill University. This summer (2012), I will be working as a Software Engineer Intern at Facebook. In September, I will return to McGill to start an M.Sc. in Applied Mathematics with [Prof. J.-C. Nave](http://www.math.mcgill.ca/jcnave/).
-
-I like to write about technical subjects. Sometimes, I digress into social and political commentary.
+* M.Sc. student in Applied Mathematics at McGill University
+    * Advisor: [Prof. J.-C. Nave](http://www.math.mcgill.ca/jcnave/)
+* Interested in math, software, languages, history, business, travel, and food.
+* Email me: <mail@mshang.ca>
+* Visit me on [Facebook](http://www.facebook.com/mshang0), [Github](https://github.com/mshang), or [Goodreads](http://www.goodreads.com/mshang).
+* Check out my [resume](https://dl.dropbox.com/u/3346475/MShangResume.pdf).
