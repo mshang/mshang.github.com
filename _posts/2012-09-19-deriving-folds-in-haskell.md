@@ -10,7 +10,7 @@ published: true
 type: post
 ---
 
-[Folds](http://en.wikipedia.org/wiki/Fold_(higher-order_function)) are fundamental operations in functional programming. There are two basic types of linear folds: left folds and right folds. Superficially, they sound like symmetric versions of one another. In reality, the difference between them is important but subtle.
+[Folds](http://en.wikipedia.org/wiki/Fold_(higher-order_function) are fundamental operations in functional programming. There are two basic types of linear folds: left folds and right folds. Superficially, they sound like symmetric versions of one another. In reality, the difference between them is important but subtle.
 
 # Right fold
 
@@ -28,7 +28,7 @@ Let the symbol `~~` mean "is equivalent to".
 
     foldr (:) [] [1,2,3] ~~ 1 : (2 : (3 : [])) ~~ [1,2,3]
 
-Implementing `foldr` recursively is straightforward. As usual, we trust the function to do the right thing for a reduced part of the input. In this case, we trust that `foldr` makes the appropriate substitutions for just the tail of the input list. If we are trying to get from `1:(2:(3:[]))` to ``1 `f` (2 `f` (3 `f` z))``, we trust that `foldr f z (2:(3:[]))` indeed gives ``2 `f` (3 `f` z))``. Then we can have ``foldr f z (1:(2:(3:[]))) = 1 `f` (foldr f z (2:(3:[])))``. In general, we define the induction step as:
+Implementing `foldr` recursively is straightforward. As usual, we trust the function to do the right thing for a reduced part of the input. In this case, we trust that `foldr` makes the appropriate substitutions for just the tail of the input list. If we are trying to get from `1:(2:(3:[]))` to ``1 `f` (2 `f` (3 `f` z))``, we trust that `foldr f z (2:(3:[]))` indeed gives ``2 `f` (3 `f` z))``. Then we can set `foldr f z (1:(2:(3:[])))` to be ``1 `f` (foldr f z (2:(3:[])))``. In general, we define the induction step as:
 
     foldr f z (x:xs) = x `f` (foldr f z xs)
 
