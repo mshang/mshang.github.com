@@ -10,7 +10,9 @@ published: true
 type: post
 ---
 
-[Folds](http://en.wikipedia.org/wiki/Fold_(higher-order_function) are fundamental operations in functional programming. There are two basic types of linear folds: left folds and right folds. Superficially, they sound like symmetric versions of one another. In reality, the difference between them is important but subtle.
+[Folds][wpfold] are fundamental operations in functional programming. There are two basic types of linear folds: left folds and right folds. Superficially, they sound like symmetric versions of one another. In reality, the difference between them is important but subtle.
+
+[wpfold]: http://en.wikipedia.org/wiki/Fold_(higher-order_function)
 
 # Right fold
 
