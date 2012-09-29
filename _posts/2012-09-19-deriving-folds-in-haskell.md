@@ -40,8 +40,6 @@ Now consider the base case. By successively taking the tail of a list, we will e
 
     foldr _ z [] = z
 
-Due to the nature of pattern matching in Haskell, the base case definition should be placed above the induction step definition.
-
 # Left fold
 
 Left folds are more difficult to understand. Intuitively, if `foldr` produces ``1 `f` (2 `f` (3 `f` z))``, then `foldl` produces ``((1 `f` 2) `f` 3) `f` z``. If `` `f` `` is associative, then these are equivalent. In particular, `+` is associative, but `:` is not. To express left fold in Haskell, it is easiest to start with a specific case and then generalize. One of the canonical examples of a left fold is `reverse`, which reverses a given list. It would be reasonable to guess that we could define `reverse` recursively, using the form:
