@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 p {
@@ -177,7 +178,7 @@ ul.posts {
     background-color: #eef;
     font-size: 85%;
     padding: 0 .2em;
-    white-space: nowrap;
+    white-space: pre;
   }
 
     #post pre code {

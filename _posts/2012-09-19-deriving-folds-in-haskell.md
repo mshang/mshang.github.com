@@ -45,7 +45,7 @@ Now consider the base case. By successively taking the tail of a list, we will e
 Left folds are more difficult to understand. Intuitively, if `foldr` produces ``1 `f` (2 `f` (3 `f` z))``, then `foldl` produces ``((1 `f` 2) `f` 3) `f` z``. If `` `f` `` is associative, then these are equivalent. In particular, `+` is associative, but `:` is not. To express left fold in Haskell, it is easiest to start with a specific case and then generalize. One of the canonical examples of a left fold is `reverse`, which reverses a given list. It would be reasonable to guess that we could define `reverse` recursively, using the form:
 
     reverse []     = []
-	reverse (x:xs) = ___ reverse ___
+    reverse (x:xs) = ___ reverse ___
 
 However, if you stare at this for long enough, you will see that it is a dead end. When we assume that the subcall to `reverse` returns the correct result for some reduced part of the input, the only reasonable candidate is the tail `xs`. This does not help, as we cannot easily append to a list. Instead, we need an accumulator: another parameter on which to recurse in order to keep track of the intermediate result.
 
@@ -58,7 +58,7 @@ We start with an empty accumulator. At each inductive step, we advance along the
 To get `foldl`, we generalize away from the cons operator in `(x:acc)`, replacing it with a more general `` `f` ``.
 
     foldl _ acc []     = acc
-	foldl f acc (x:xs) = foldl (acc `f` x) xs
+    foldl f acc (x:xs) = foldl (acc `f` x) xs
 
 Note the order of the operands of `` `f` ``. This is to obtain the same linear order as `foldr`. In particular:
 
