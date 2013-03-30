@@ -13,4 +13,4 @@ type: page
 
 * Interested in math, software, languages, history, business, travel, and food.
 * Email me: <mail@mshang.ca>
-* Visit me on [Facebook](http://www.facebook.com/mshang0), [Github](https://github.com/mshang), or [Goodreads](http://www.goodreads.com/mshang).
+* Visit me on [Facebook](http://www.facebook.com/mshang0), [Instagram](http://instagram.com/mshang0), [Github](https://github.com/mshang), or [Goodreads](http://www.goodreads.com/mshang).
