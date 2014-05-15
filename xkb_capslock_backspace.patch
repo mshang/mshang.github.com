@@ -1,0 +1,68 @@
+# Keycode change is necessary to get key repeat working.
+Index: /usr/share/X11/xkb/keycodes/evdev
+@@ -20,7 +20,7 @@
+ 	<AE10> = 19;
+ 	<AE11> = 20;
+ 	<AE12> = 21;
+-	<BKSP> = 22;
++	<BKSP> = 66;
+ 
+ 	<TAB> = 23;
+ 	<AD01> = 24;
+@@ -39,7 +39,7 @@
+ 	alias <AC12> = <BKSL>;
+ 	<RTRN> = 36;
+ 
+-	<CAPS> = 66;
++	<CAPS> = 22;
+ 	<AC01> = 38;
+ 	<AC02> = 39;
+ 	<AC03> = 40;
+Index: /usr/share/X11/xkb/rules/evdev
+@@ -1026,6 +1026,7 @@
+   caps:numlock		=	+capslock(numlock)
+   caps:shiftlock	=	+capslock(shiftlock)
+   caps:swapescape	=	+capslock(swapescape)
++  caps:swapbackspace	=	+capslock(swapbackspace)
+   caps:escape		=	+capslock(escape)
+   caps:backspace	=	+capslock(backspace)
+   caps:super		=	+capslock(super)
+Index: /usr/share/X11/xkb/rules/evdev.xml
+@@ -6226,6 +6226,12 @@
+       </option>
+       <option>
+         <configItem>
++          <name>caps:swapbackspace</name>
++          <description>Swap ESC and Caps Lock</description>
++        </configItem>
++      </option>
++      <option>
++        <configItem>
+           <name>caps:escape</name>
+           <description>Make Caps Lock an additional ESC</description>
+         </configItem>
+Index: /usr/share/X11/xkb/symbols/capslock
+@@ -22,6 +22,13 @@
+ };
+ 
+ partial hidden modifier_keys
++xkb_symbols "swapbackspace" {
++    key <CAPS> { [ BackSpace ] };
++    key <BKSP>  { [ Caps_Lock ] };
++    modifier_map Lock { BackSpace };
++};
++
++partial hidden modifier_keys
+ xkb_symbols "groupshift" {
+     key <CAPS> {
+         type[Group1] = "PC_ALT_LEVEL2",
+Index: /etc/default/keyboard
+@@ -8,7 +8,7 @@
+ XKBMODEL="pc105"
+ XKBLAYOUT="us"
+ XKBVARIANT="dvorak"
+-XKBOPTIONS=""
++XKBOPTIONS="caps:swapbackspace"
+ 
+ # If you don't want to use the XKB layout on the console, you can
+ # specify an alternative keymap.  Make sure it will be accessible
