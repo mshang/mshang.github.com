@@ -12,7 +12,7 @@ type: post
 
 I made a patch file that switches the Caps Lock and Backspace keys in Ubuntu 14.04 by changing some X config files.
 
-    > wget mshang.ca/xkb_capslock_delete.patch
+    > wget mshang.ca/xkb_capslock_backspace.patch
     # Make sure it looks safe.
-    > less xkb_capslock_delete.patch
+    > less xkb_capslock_backspace.patch
     > sudo patch -d/ -p0 < xkb_capslock_backspace.patch
