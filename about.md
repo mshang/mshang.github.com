@@ -9,7 +9,7 @@ tags: []
 published: true
 type: page
 ---
-![me](http://www.gravatar.com/avatar/e33c148b476b162b14541e2ddac94ba3?s=200)
+![me](http://www.gravatar.com/avatar/12db455e68775754c03ba6d5faac703d?s=200)
 
 * Interested in math, software, languages, history, business, travel, and food.
 * Email me: <mail@mshang.ca>
