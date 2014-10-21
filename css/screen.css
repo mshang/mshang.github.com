@@ -166,6 +166,8 @@ ul.posts {
     border: 1px solid #ddd;
     background-color: #eef;
     padding: 0 .4em;
+    position: relative;
+    text-align: left;
   }
 
   #post ul,
@@ -195,6 +197,34 @@ ul.posts {
 
   #post pre.terminal code {
     background-color: #333;
+  }
+
+  #post pre > code.language-matlab::before {
+    content: "MATLAB";
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    background-color: #A0A0C0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+
+  #post pre > code.language-javascript::before {
+    content: "Javascript";
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    background-color: #A0A0C0;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 
 #related {
