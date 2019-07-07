@@ -6,7 +6,7 @@ meta:
 layout: post
 tags: []
 
-published: true
+published: false
 type: post
 ---
 Every positive integer can be uniquely expressed as an odd number times a power of two. In case this factoid isn't immediately obvious to anyone, as it wasn't to me, here's why:

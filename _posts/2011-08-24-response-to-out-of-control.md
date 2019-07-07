@@ -6,7 +6,7 @@ meta:
 layout: post
 tags: []
 
-published: true
+published: false
 type: post
 ---
 This is a response to the following article which I found on reddit:

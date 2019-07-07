@@ -6,7 +6,7 @@ meta:
 layout: post
 tags: []
 
-published: true
+published: false
 type: post
 ---
 [Sortition](http://en.wikipedia.org/wiki/Sortition) is where you pick people to govern at random from the population. Maybe this is something you've thought about, but you never knew was a real thing... with a name. I certainly didn't know. I also didn't know that it was used in ancient Greece, cf. Aristotle:
